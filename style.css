@@ -23,6 +23,7 @@
     top: 0;
     height: 100%;
     background-color: var(--main-color);
+    z-index: 100;
 }
 
 .sidebar-brand{
@@ -34,6 +35,10 @@
 .sidebar-brand span{
     display: inline-block;
     padding-right: 1rem;
+}
+
+.sidebar-menu{
+    margin-top: 1rem;
 }
 
 .sidebar-menu li{
@@ -71,6 +76,16 @@ header{
     justify-content: space-between;
     padding: 1rem;
     background-color: var(--text-color-dois);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    left: 345px;
+    width: calc(100% - 345px);
+    top: 0;
+    z-index: 100;
+}
+
+header h2{
+    color: var(--main-color);
 }
 
 .search-wrapper{
@@ -100,4 +115,44 @@ header{
 .user-wrapper{
     display: flex;
     align-items: center;
+}
+
+.user-wrapper img{
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.user-wrapper small{
+    display: inline-block;
+    color: var(--text-color);
+}
+
+main{
+    margin-top: 90px;
+    padding: 2rem 1.5rem;
+    min-height: calc(100vh - 90px);
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    margin-top: 1rem;
+}
+
+.card-single{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--text-color-dois);
+    padding: 2rem;
+    border-radius: 5px;
+    border: 3px solid var(--text-color);
+}
+
+.card-single span:last-child{
+    color: var(--color-dark);
+}
+
+.card-single span:first-child{
+    font-size: 3rem;
 }

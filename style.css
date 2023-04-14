@@ -178,14 +178,99 @@ main{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-bottom: 1px solid var(--color-dark);
 }
 
 .card-header button{
     background-color: var(--text-color-dois);
     border-radius: 10px;
     color: var(--color-dark);
+    font-size: .8rem;
+    padding: .6rem 1rem;
+    border: none;
 }
 
 table{
     border-collapse: collapse;
 }
+
+thead tr{
+    border-top: 1px solid var(--color-dark);
+    border-bottom: 1px solid var(--color-dark);
+}
+
+thead td{
+    font-weight: 700;
+    padding: 0.4rem;
+    color: var(--main-color)
+}
+
+td{
+    padding: .5rem 1rem;
+    color: var(--text-color-dois);
+    font-size: .9rem;
+}
+
+td .status{
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+tr td:last-child{
+    display: flex;
+    align-items: center;
+}
+
+.status.purple{
+    background-color: rebeccapurple;
+}
+
+.status.pink{
+    background-color: deeppink;
+}
+
+.status.orange{
+    background-color: orangered;
+}
+
+
+.table-responsive{
+    width: 100%;
+    overflow-x: auto;
+}
+
+.customer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 1rem;
+}
+
+.info{
+    display: flex;
+    align-items: center;
+}
+
+.info img{
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.info h4{
+    font-size: .8rem;
+    font-weight: 600;
+    color: var(--text-color-dois);
+}
+
+.info small{
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+.contact span{
+    font-size: 1.2rem;
+}
+
